@@ -113,7 +113,7 @@
     },
     {
         patterns: /how is the weather|what is the weather today|tell me the weather|hey kenny tell me today's weather forecast|hey keni tell me today's weather|hey kenny tell me today's weather|hey can you tell me today's weather|keni tell me today's weather|kenny tell me today's weather|tell me today's weather|what's the weather today|today's weather/i,
-        responses: [`${getWeather()}`] // Assume getWeather() is defined elsewhere
+        responses: [`{getWeather()}`] // Assume getWeather() is defined elsewhere
     },
     {
         patterns: /what is your name\?|who are you\?|tell me your name/i,
@@ -121,11 +121,11 @@
     },
     {
         patterns: /tell me today's date|what is today's date|hey kenny tell me today's date|hey keni tell me today's date|hey can you tell me today's date/i,
-        responses: [`Today's Date is ${today}`] // Assume today is defined elsewhere
+        responses: [`Today's Date is {today}`] // Assume today is defined elsewhere
     },
     {
         patterns: /what's the time now\?|whats the time now\?|tell me current time/i,
-        responses: [`It's ${currentTime}`] // Assume currentTime is defined elsewhere
+        responses: [`It's {currentTime}`] // Assume currentTime is defined elsewhere
     },
     {
         patterns: /who made you\?|who programmed you|who created you/i,
